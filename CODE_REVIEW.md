@@ -9,7 +9,7 @@ It's based on two articles by Michael Lynch: [How to Do Code Reviews Like a Huma
 ## TL;DR
 
 - The goal of a review is not to find the maximum number of bugs, but to help your teammate make the code better while keeping a healthy working relationship.
-- Automate everything you can (linters, formatters, CI). Style debates are settled by the [style guide]([LINK]).
+- Automate everything you can (linters, formatters, CI). Style debates are settled by the repo's style guide.
 - Start the review immediately, respond fast, work top-down from high-level issues to small ones.
 - Frame feedback as requests, ground notes in principles rather than taste, and never say "you".
 - Don't push for perfection — aim to raise the code by one or two letter grades. Approve as soon as only minor issues remain.
@@ -45,7 +45,7 @@ Wire these checks directly into the pipeline (pre-commit hooks, required CI chec
 
 ### 2. Style debates are settled by the style guide
 
-Arguing about braces, line length, and naming in every review is a waste of time. The team has a single style guide: **[LINK]**. Read it before your first review.
+Arguing about braces, line length, and naming in every review is a waste of time. **Each repository has its own style guide** — usually it depends on the language and the specifics of the project. Find it in the repo (typically `STYLE_GUIDE.md` or linked from `README.md`) and read it before your first review there.
 
 How to use it during a review:
 
@@ -204,7 +204,7 @@ Messy review arguments are usually less about the code and more about the relati
 Before you hit "send", run through this list:
 
 - [ ] Are there notes that should have been caught by linter/formatter/CI?
-- [ ] Are style debates grounded in the style guide, not personal taste?
+- [ ] Are style debates grounded in the repo's style guide, not personal taste?
 - [ ] In the first round, is the focus mostly high-level (architecture, responsibilities) rather than nitpicks?
 - [ ] Is the word "you" absent everywhere?
 - [ ] Are notes phrased as requests rather than commands?
