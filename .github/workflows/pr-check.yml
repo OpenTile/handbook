@@ -1,0 +1,13 @@
+name: PR Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: [self-hosted, macos]
+    steps:
+      - name: Print test message
+        run: echo "Тестовый текст — всё работает!"
